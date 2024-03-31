@@ -53,7 +53,7 @@
                             </div>
 
                             <div class="col-md-6 offset-md-4">
-                                <input type="submit" value="Verif" name="verif">
+                                <input type="submit" value="Verify" name="verify">
                             </div>
                     </div>
                     </form>
@@ -68,7 +68,7 @@
 </html>
 <?php 
     include('database.php');
-    if(isset($_POST["verif"])){
+    if(isset($_POST["verify"])){
         $otp = $_SESSION['otp'];
         $email = $_SESSION['email'];
         $otp_code = $_POST['otp_code'];
